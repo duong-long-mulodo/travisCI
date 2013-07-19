@@ -142,6 +142,17 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>3.6.0</version>
+                    <configuration>
+                        <sdk>
+                            <platform>16</platform>
+                        </sdk>
+                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 </project>
